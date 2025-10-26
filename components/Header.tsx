@@ -1,12 +1,14 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import LanguageToggle from './LanguageToggle'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Header() {
   const { t } = useLanguage()
+  const pathname = usePathname()
 
   return (
     <header className="sticky top-0 z-50 flex justify-center bg-[#f5f2e8]/80 backdrop-blur-sm border-b border-secondary/20">
@@ -22,19 +24,55 @@ export default function Header() {
         </Link>
         <div className="flex flex-1 justify-end items-center gap-8">
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <Link href="/products" className="hover:text-primary transition-colors">{t.nav.shop}</Link>
-            <Link href="/our-story" className="hover:text-primary transition-colors">{t.nav.ourStory}</Link>
-            <Link href="/gallery" className="hover:text-primary transition-colors">{t.nav.gallery}</Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">{t.nav.contact}</Link>
+            <Link
+              href="/products"
+              className={`transition-colors duration-300 hover:underline underline-offset-4 ${
+                pathname?.startsWith('/products')
+                  ? 'text-[#2a402b] underline underline-offset-4 font-semibold'
+                  : 'text-[#1f1f1f] hover:text-[#2a402b]'
+              }`}
+            >
+              {t.nav.shop}
+            </Link>
+            <Link
+              href="/our-story"
+              className={`transition-colors duration-300 hover:underline underline-offset-4 ${
+                pathname === '/our-story'
+                  ? 'text-[#2a402b] underline underline-offset-4 font-semibold'
+                  : 'text-[#1f1f1f] hover:text-[#2a402b]'
+              }`}
+            >
+              {t.nav.ourStory}
+            </Link>
+            <Link
+              href="/gallery"
+              className={`transition-colors duration-300 hover:underline underline-offset-4 ${
+                pathname === '/gallery'
+                  ? 'text-[#2a402b] underline underline-offset-4 font-semibold'
+                  : 'text-[#1f1f1f] hover:text-[#2a402b]'
+              }`}
+            >
+              {t.nav.gallery}
+            </Link>
+            <Link
+              href="/contact"
+              className={`transition-colors duration-300 hover:underline underline-offset-4 ${
+                pathname === '/contact'
+                  ? 'text-[#2a402b] underline underline-offset-4 font-semibold'
+                  : 'text-[#1f1f1f] hover:text-[#2a402b]'
+              }`}
+            >
+              {t.nav.contact}
+            </Link>
           </nav>
           <div className="flex gap-4">
-            <button className="flex cursor-pointer items-center justify-center text-primary hover:text-primary/70 transition-colors" aria-label="Search">
+            <button className="flex cursor-pointer items-center justify-center text-[#2a402b] hover:text-[#2a402b]/70 transition-all duration-300 hover:scale-110 active:scale-95" aria-label="Search">
               <span className="material-symbols-outlined text-2xl">search</span>
             </button>
-            <button className="flex cursor-pointer items-center justify-center text-primary hover:text-primary/70 transition-colors" aria-label="Account">
+            <button className="flex cursor-pointer items-center justify-center text-[#2a402b] hover:text-[#2a402b]/70 transition-all duration-300 hover:scale-110 active:scale-95" aria-label="Account">
               <span className="material-symbols-outlined text-2xl">person</span>
             </button>
-            <button className="flex cursor-pointer items-center justify-center text-primary hover:text-primary/70 transition-colors" aria-label="Shopping Cart">
+            <button className="flex cursor-pointer items-center justify-center text-[#2a402b] hover:text-[#2a402b]/70 transition-all duration-300 hover:scale-110 active:scale-95" aria-label="Shopping Cart">
               <span className="material-symbols-outlined text-2xl">shopping_bag</span>
             </button>
             <LanguageToggle />

@@ -126,23 +126,23 @@ export default function ProductsPage() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                 {products.map((product) => (
-                  <div key={product.id} className="flex flex-col gap-3 group">
-                    <div className="relative overflow-hidden">
+                  <div key={product.id} className="flex flex-col gap-3 group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
+                    <div className="relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
                       <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden">
                         <Image
                           src={product.image}
                           alt={product.alt}
                           fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="object-cover transition-transform duration-300 group-hover:scale-110"
                           sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
                         />
                       </div>
-                      <button className="absolute bottom-4 right-4 flex items-center justify-center size-10 bg-[#2a402b] text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:scale-100 scale-90">
+                      <button className="absolute bottom-4 right-4 flex items-center justify-center size-10 bg-[#2a402b] text-white rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-100 scale-90 hover:bg-[#2a402b]/90">
                         <span className="material-symbols-outlined text-xl">add_shopping_cart</span>
                       </button>
                     </div>
                     <div>
-                      <p className="text-[#1f1f1f] text-base font-medium leading-normal">{product.name}</p>
+                      <p className="text-[#1f1f1f] text-base font-medium leading-normal group-hover:text-primary transition-colors duration-300">{product.name}</p>
                       <p className="text-[#6b6b6b] text-sm font-normal leading-normal">{product.description}</p>
                       <p className="text-[#1f1f1f] text-sm font-semibold leading-normal mt-1">${product.price}</p>
                     </div>

@@ -72,8 +72,8 @@ export default function OurStoryPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex flex-col gap-3 rounded-xl border border-[#d4c5b9] bg-white p-6 items-center text-center">
-                <span className="material-symbols-outlined text-primary text-4xl">eco</span>
+              <div className="flex flex-col gap-3 rounded-xl border border-[#d4c5b9] bg-white p-6 items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <span className="material-symbols-outlined text-primary text-4xl transition-transform duration-300 group-hover:scale-110">eco</span>
                 <div className="flex flex-col gap-1">
                   <h3 className="text-[#1f1f1f] text-lg font-bold leading-tight">{t.ourStory.naturalTitle}</h3>
                   <p className="text-[#6b6b6b] text-sm font-normal leading-normal">
@@ -81,8 +81,8 @@ export default function OurStoryPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 rounded-xl border border-[#d4c5b9] bg-white p-6 items-center text-center">
-                <span className="material-symbols-outlined text-primary text-4xl">public</span>
+              <div className="flex flex-col gap-3 rounded-xl border border-[#d4c5b9] bg-white p-6 items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <span className="material-symbols-outlined text-primary text-4xl transition-transform duration-300 group-hover:scale-110">public</span>
                 <div className="flex flex-col gap-1">
                   <h3 className="text-[#1f1f1f] text-lg font-bold leading-tight">{t.ourStory.globalTitle}</h3>
                   <p className="text-[#6b6b6b] text-sm font-normal leading-normal">
@@ -90,8 +90,8 @@ export default function OurStoryPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 rounded-xl border border-[#d4c5b9] bg-white p-6 items-center text-center">
-                <span className="material-symbols-outlined text-primary text-4xl">recycling</span>
+              <div className="flex flex-col gap-3 rounded-xl border border-[#d4c5b9] bg-white p-6 items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <span className="material-symbols-outlined text-primary text-4xl transition-transform duration-300 group-hover:scale-110">recycling</span>
                 <div className="flex flex-col gap-1">
                   <h3 className="text-[#1f1f1f] text-lg font-bold leading-tight">{t.ourStory.ecoTitle}</h3>
                   <p className="text-[#6b6b6b] text-sm font-normal leading-normal">
@@ -115,8 +115,8 @@ export default function OurStoryPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9]">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary">
+              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                   <span className="material-symbols-outlined text-3xl">grass</span>
                 </div>
                 <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.sourcingTitle}</h3>
@@ -124,8 +124,8 @@ export default function OurStoryPage() {
                   {t.ourStory.sourcingDescription}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9]">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary">
+              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                   <span className="material-symbols-outlined text-3xl">wb_sunny</span>
                 </div>
                 <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.dryingTitle}</h3>
@@ -133,8 +133,8 @@ export default function OurStoryPage() {
                   {t.ourStory.dryingDescription}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9]">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary">
+              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                   <span className="material-symbols-outlined text-3xl">grain</span>
                 </div>
                 <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.grindingTitle}</h3>
@@ -142,8 +142,8 @@ export default function OurStoryPage() {
                   {t.ourStory.grindingDescription}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9]">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary">
+              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                   <span className="material-symbols-outlined text-3xl">filter_alt</span>
                 </div>
                 <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.siftingTitle}</h3>
@@ -151,8 +151,8 @@ export default function OurStoryPage() {
                   {t.ourStory.siftingDescription}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9]">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary">
+              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                   <span className="material-symbols-outlined text-3xl">science</span>
                 </div>
                 <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.qualityControlTitle}</h3>
@@ -160,8 +160,8 @@ export default function OurStoryPage() {
                   {t.ourStory.qualityControlDescription}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9]">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary">
+              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
+                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                   <span className="material-symbols-outlined text-3xl">inventory_2</span>
                 </div>
                 <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.packagingTitle}</h3>

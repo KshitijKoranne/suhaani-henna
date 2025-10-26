@@ -51,22 +51,22 @@ export default function HomePage() {
                 <p className="text-[#6b6b6b] text-base font-normal leading-normal max-w-3xl">{t.home.pureNaturalSubtitle}</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="flex flex-col flex-1 gap-4 rounded-xl border border-secondary/20 bg-white p-6 text-center items-center">
-                  <div className="text-primary"><span className="material-symbols-outlined text-4xl">eco</span></div>
+                <div className="flex flex-col flex-1 gap-4 rounded-xl border border-secondary/20 bg-white p-6 text-center items-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer">
+                  <div className="text-primary transition-transform duration-300 group-hover:scale-110"><span className="material-symbols-outlined text-4xl">eco</span></div>
                   <div className="flex flex-col gap-1">
                     <h3 className="text-[#1f1f1f] text-lg font-bold leading-tight">{t.home.feature1Title}</h3>
                     <p className="text-[#6b6b6b] text-sm font-normal leading-normal">{t.home.feature1Description}</p>
                   </div>
                 </div>
-                <div className="flex flex-col flex-1 gap-4 rounded-xl border border-secondary/20 bg-white p-6 text-center items-center">
-                  <div className="text-primary"><span className="material-symbols-outlined text-4xl">palette</span></div>
+                <div className="flex flex-col flex-1 gap-4 rounded-xl border border-secondary/20 bg-white p-6 text-center items-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer">
+                  <div className="text-primary transition-transform duration-300 group-hover:scale-110"><span className="material-symbols-outlined text-4xl">palette</span></div>
                   <div className="flex flex-col gap-1">
                     <h3 className="text-[#1f1f1f] text-lg font-bold leading-tight">{t.home.feature2Title}</h3>
                     <p className="text-[#6b6b6b] text-sm font-normal leading-normal">{t.home.feature2Description}</p>
                   </div>
                 </div>
-                <div className="flex flex-col flex-1 gap-4 rounded-xl border border-secondary/20 bg-white p-6 text-center items-center">
-                  <div className="text-primary"><span className="material-symbols-outlined text-4xl">health_and_safety</span></div>
+                <div className="flex flex-col flex-1 gap-4 rounded-xl border border-secondary/20 bg-white p-6 text-center items-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer">
+                  <div className="text-primary transition-transform duration-300 group-hover:scale-110"><span className="material-symbols-outlined text-4xl">health_and_safety</span></div>
                   <div className="flex flex-col gap-1">
                     <h3 className="text-[#1f1f1f] text-lg font-bold leading-tight">{t.home.feature3Title}</h3>
                     <p className="text-[#6b6b6b] text-sm font-normal leading-normal">{t.home.feature3Description}</p>
@@ -130,15 +130,15 @@ export default function HomePage() {
               </div>
               <div className="grid grid-cols-2 grid-rows-2 gap-4 h-[500px]">
                 <div
-                  className="col-span-1 row-span-2 rounded-xl bg-cover bg-center"
+                  className="col-span-1 row-span-2 rounded-xl bg-cover bg-center overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{backgroundImage: "url('/images/story-henna-hands.jpg')"}}
                 />
                 <div
-                  className="col-span-1 row-span-1 rounded-xl bg-cover bg-center"
+                  className="col-span-1 row-span-1 rounded-xl bg-cover bg-center overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{backgroundImage: "url('/images/story-henna-leaves.jpg')"}}
                 />
                 <div
-                  className="col-span-1 row-span-1 rounded-xl bg-cover bg-center"
+                  className="col-span-1 row-span-1 rounded-xl bg-cover bg-center overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer"
                   style={{backgroundImage: "url('/images/story-henna-hair.jpg')"}}
                 />
               </div>

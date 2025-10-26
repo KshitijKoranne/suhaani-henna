@@ -21,7 +21,7 @@ export default function Footer() {
                 aria-label="Email address"
               />
               <button
-                className="flex items-center justify-center rounded-lg h-11 px-5 bg-[#2a402b] text-white text-sm font-bold hover:bg-[#2a402b]/90 transition-colors"
+                className="flex items-center justify-center rounded-lg h-11 px-5 bg-[#2a402b] text-white text-sm font-bold hover:bg-[#2a402b]/90 transition-all duration-300 hover:scale-105 hover:shadow-md"
                 type="submit"
               >
                 {t.footer.subscribe}
@@ -31,19 +31,19 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h3 className="text-base font-bold">{t.footer.shopTitle}</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/products?category=body-art" className="text-[#6b6b6b] hover:text-primary">{t.footer.bodyArt}</Link></li>
-              <li><Link href="/products?category=hair-care" className="text-[#6b6b6b] hover:text-primary">{t.footer.hairCare}</Link></li>
-              <li><Link href="/products?category=aftercare" className="text-[#6b6b6b] hover:text-primary">{t.footer.aftercare}</Link></li>
-              <li><Link href="/products?category=kits" className="text-[#6b6b6b] hover:text-primary">{t.footer.kits}</Link></li>
+              <li><Link href="/products?category=body-art" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.bodyArt}</Link></li>
+              <li><Link href="/products?category=hair-care" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.hairCare}</Link></li>
+              <li><Link href="/products?category=aftercare" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.aftercare}</Link></li>
+              <li><Link href="/products?category=kits" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.kits}</Link></li>
             </ul>
           </div>
           <div className="flex flex-col gap-4">
             <h3 className="text-base font-bold">{t.footer.supportTitle}</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/contact" className="text-[#6b6b6b] hover:text-primary">{t.footer.contactUs}</Link></li>
-              <li><Link href="/contact#faq" className="text-[#6b6b6b] hover:text-primary">{t.footer.faq}</Link></li>
-              <li><Link href="/shipping" className="text-[#6b6b6b] hover:text-primary">{t.footer.shipping}</Link></li>
-              <li><Link href="/terms" className="text-[#6b6b6b] hover:text-primary">{t.footer.terms}</Link></li>
+              <li><Link href="/contact" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.contactUs}</Link></li>
+              <li><Link href="/contact#faq" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.faq}</Link></li>
+              <li><Link href="/shipping" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.shipping}</Link></li>
+              <li><Link href="/terms" className="text-[#6b6b6b] hover:text-primary transition-all duration-300 hover:translate-x-1 inline-block">{t.footer.terms}</Link></li>
             </ul>
           </div>
         </div>

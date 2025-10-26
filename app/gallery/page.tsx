@@ -109,22 +109,22 @@ export default function GalleryPage() {
           {/* Filter Buttons */}
           <div className="mb-8 overflow-x-auto pb-2">
             <div className="flex w-full gap-3">
-              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-primary/20 text-primary">
+              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-primary/20 text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:shadow-md">
                 <p className="text-sm font-bold leading-normal">{t.gallery.filterAll}</p>
               </button>
-              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-colors">
+              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
                 <p className="text-sm font-medium leading-normal">{t.gallery.filterCustomer}</p>
               </button>
-              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-colors">
+              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
                 <p className="text-sm font-medium leading-normal">{t.gallery.filterBodyArt}</p>
               </button>
-              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-colors">
+              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
                 <p className="text-sm font-medium leading-normal">{t.gallery.filterHairCare}</p>
               </button>
-              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-colors">
+              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
                 <p className="text-sm font-medium leading-normal">{t.gallery.filterTattoos}</p>
               </button>
-              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-colors">
+              <button className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 bg-[#d4c5b9] hover:bg-primary/20 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
                 <p className="text-sm font-medium leading-normal">{t.gallery.filterProfessional}</p>
               </button>
             </div>
@@ -135,18 +135,18 @@ export default function GalleryPage() {
             {galleryItems.map((item) => (
               <div
                 key={item.id}
-                className="relative break-inside-avoid overflow-hidden rounded-xl group cursor-pointer"
+                className="relative break-inside-avoid overflow-hidden rounded-xl group cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300"
               >
                 <Image
                   src={item.src}
                   alt={item.alt}
                   width={400}
                   height={600}
-                  className="w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-0 left-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                <div className="absolute bottom-0 left-0 p-4 text-white opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                   <p className="text-base font-bold leading-tight">{item.title}</p>
                 </div>
               </div>

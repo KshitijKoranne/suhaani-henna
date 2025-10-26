@@ -131,11 +131,11 @@ export default function ContactPage() {
                   {faqs.map((faq) => (
                     <details
                       key={faq.id}
-                      className="group rounded-lg bg-white p-4 border border-[#d4c5b9]"
+                      className="group rounded-lg bg-white p-4 border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:border-primary/30 cursor-pointer"
                     >
-                      <summary className="flex cursor-pointer list-none items-center justify-between font-medium text-[#1f1f1f]">
+                      <summary className="flex cursor-pointer list-none items-center justify-between font-medium text-[#1f1f1f] transition-colors duration-300 hover:text-primary">
                         {faq.question}
-                        <span className="transition group-open:rotate-180">
+                        <span className="transition-transform duration-300 group-open:rotate-180">
                           <span className="material-symbols-outlined">expand_more</span>
                         </span>
                       </summary>

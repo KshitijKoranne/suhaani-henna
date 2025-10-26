@@ -16,13 +16,13 @@ export default function ProductCard({ title, description, imageUrl, imageAlt, hr
   const { t } = useLanguage()
 
   return (
-    <div className="flex h-full flex-col gap-4 rounded-xl bg-white shadow-lg">
+    <div className="flex h-full flex-col gap-4 rounded-xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
       <div className="relative w-full aspect-square rounded-t-xl overflow-hidden">
         <Image
           src={imageUrl}
           alt={imageAlt}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-300 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
@@ -33,7 +33,7 @@ export default function ProductCard({ title, description, imageUrl, imageAlt, hr
         </div>
         <Link
           href={href}
-          className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 text-primary font-bold hover:bg-primary/20 transition-colors"
+          className="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300"
         >
           <span className="truncate">{t.home.viewProduct}</span>
         </Link>
