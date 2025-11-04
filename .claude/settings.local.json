@@ -4,7 +4,10 @@
       "Bash(curl -L \"https://lh3.googleusercontent.com/aida-public/AB6AXuC3fpoSioDURm2VWcXVmIPMHJCIiGjHdPjgcUkj3rRA0LOnduiYZGDBbrtCxYf0gMX5Be6etWhWTf4TzVlCt78Eh9aJ18YfJfjA6AzG1j2nJgAOrx9JRRxBJExACc-uxflDfSQ7rQ9GIjPp8zxS8sxtpyi7F_9a-U1XaCPMtXDl3ZaWZdNI1_ZAOjDurwCxyVElzTbW9le6VmYVkKlXZuzJxzfYJQ4OAMek5su16nYVE8GXzNqkTVz0OIh_uoeq4I5UAeDFtQG3Fbc\" -o product-henna-cones.jpg)",
       "Bash(curl -L \"https://lh3.googleusercontent.com/aida-public/AB6AXuCMQ_NYjoOXIGT5rgfqOv6ciL7g4QdVLOovPmu_pOnOcQeV4dkAPRtrZiW7AY0jg9iF2nVS9M6PobCeide3lZ3sr37piiBqDj-t5QH0FfaI-AMiOjNkeqSIrQ0BmLaQKGNhK8dFek3waAxEEEQeewVpBustlJaeXRXyMWQrTBBtJnIvVEtP8RjBiwsBp1Rpmpk3zK3mFtE0cV9B8lPSlieNsjqz37-vXnDREY-kW9I6ibfcgZT9U2IE237U0LTgy6PhGo5MkletZ78\" -o product-hair-color-kit.jpg)",
       "Bash(curl -L \"https://lh3.googleusercontent.com/aida-public/AB6AXuC-7lyTiePjtYQUQxsHWCJNAMFo7t_ErlasjkuwxcmLOdIco9MRVVe4zXPAes5ZRiZjF4qFmIevbR1-HEoX-cmC5LvncE1AMfhTd2tMz9YikdSJo0vzoJcMJmVqq-cAa90Bt0ssIbYlu5kiqM_VHABVK9npuWwEu1ylmmO2Uzojm3ygt4hJ9Cgm0rnTpDn0fOi5vyut9HDrT8AOjtloINwS7Ip62GzNHcoWC4_CJBY-hAYfCglLRTc14KRckf3Hjz6kU3ny2lyiCkI\" -o product-aftercare-balm.jpg)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebSearch",
+      "WebFetch(domain:www.pexels.com)",
+      "WebFetch(domain:commons.wikimedia.org)"
     ],
     "deny": [],
     "ask": []

@@ -1,7 +1,7 @@
 # Suhaani Henna - Next.js Website Project
 
 ## Project Overview
-Complete Suhaani Henna e-commerce website built with Next.js 15+ with App Router, featuring bilingual support (English/Hindi) for better regional reach while maintaining SEO optimization and exact design fidelity.
+Complete Suhaani Henna product catalog website built with Next.js 15+ with App Router, featuring bilingual support (English/Hindi) for better regional reach while maintaining SEO optimization and exact design fidelity.
 
 ## Tech Stack
 - **Framework**: Next.js 16.0.0 with App Router
@@ -29,14 +29,14 @@ suhaani_henna/
 │   ├── sitemap.ts          # Dynamic sitemap generation ✅
 │   ├── robots.ts           # Robots.txt configuration ✅
 │   ├── products/
-│   │   ├── page.tsx        # Product catalog ✅ COMPLETE (Bilingual)
+│   │   ├── page.tsx        # Product catalog with filtering ✅ COMPLETE (Bilingual)
 │   │   └── [id]/page.tsx   # Product detail ✅ COMPLETE
 │   ├── our-story/          # About/Story page ✅ COMPLETE (Bilingual)
 │   ├── gallery/            # Henna art gallery ✅ COMPLETE (Bilingual)
 │   └── contact/            # Contact & FAQ page ✅ COMPLETE (Bilingual)
 ├── components/
-│   ├── Header.tsx          # Sticky nav with logo & icons ✅ (Bilingual)
-│   ├── Footer.tsx          # Newsletter & links ✅ (Bilingual)
+│   ├── Header.tsx          # Sticky nav with logo & language toggle ✅ (Bilingual)
+│   ├── Footer.tsx          # Footer links ✅ (Bilingual)
 │   ├── ProductCard.tsx     # Reusable product display ✅ (Bilingual)
 │   └── LanguageToggle.tsx  # EN/HI toggle button ✅
 ├── contexts/
@@ -54,7 +54,7 @@ suhaani_henna/
 ### Language Support
 - **English (EN)**: Default language
 - **Hindi (HI)**: Complete translation for all pages
-- **Toggle Position**: Top right corner of header, after shopping cart icon
+- **Toggle Position**: Top right corner of header
 - **Visual Indicator**: Shows "हिं" in EN mode, "EN" in HI mode with 🌐 icon
 
 ### Implementation Details
@@ -71,7 +71,7 @@ suhaani_henna/
 - ✅ Products page (catalog, categories, filters, products)
 - ✅ Gallery page (title, filters, buttons)
 - ✅ Contact page (form labels, FAQs)
-- ✅ Footer (newsletter, links, "Made proudly in India 🇮🇳")
+- ✅ Footer (links, "Made proudly in India 🇮🇳")
 
 ### Usage Pattern
 ```tsx
@@ -100,24 +100,22 @@ export default function Page() {
 **Status**: COMPLETE (Bilingual)
 **Features**:
 - Hero banner with text overlay
-- Sidebar with category filters & price range slider (all translated)
+- Sidebar with category filtering (all translated)
 - 3-column product grid (responsive: 1/2/3)
-- Hover effects: image zoom + add-to-cart button
-- Pagination (4 pages)
+- Hover effects: image zoom
 **Products** (6 total, all with EN/HI names and descriptions):
-- Suhaani Henna Powder / सुहानी हेना पाउडर ($12.99)
-- Suhaani Henna Paste / सुहानी हेना पेस्ट ($14.99)
-- Suhaani Henna Cones / सुहानी हेना कोन ($15.99)
-- Herbal Hair Care Oil / हर्बल हेयर केयर ऑयल ($18.99)
-- Bridal Henna Kit / ब्राइडल हेना किट ($29.99)
-- Natural Hair Henna / नेचुरल हेयर हेना ($10.99)
+- Suhaani Henna Powder / सुहानी हेना पाउडर
+- Suhaani Henna Paste / सुहानी हेना पेस्ट
+- Suhaani Henna Cones / सुहानी हेना कोन
+- Herbal Hair Care Oil / हर्बल हेयर केयर ऑयल
+- Bridal Henna Kit / ब्राइडल हेना किट
+- Natural Hair Henna / नेचुरल हेयर हेना
 
 ### ✅ 3. Product Detail (`/products/[slug]`)
 **Status**: COMPLETE
 **Features**:
 - Image gallery (main + thumbnails)
-- Product info: title, rating (4.8/5), price, size selector
-- Quantity picker, Add-to-cart button
+- Product info: title, rating (4.8/5)
 - Product features badges (100% Natural, Cruelty-Free, Skin-Safe)
 - Tabbed content (Ingredients, Application, Before & After)
 - Customer reviews with star distribution
@@ -129,13 +127,7 @@ export default function Page() {
 - Hero section with background image
 - "Our Commitment to Excellence" with image
 - 3 promise cards (100% Natural, Global Standards, Eco-Friendly)
-- 6-step quality process with numbered icons (all translated):
-  1. Sourcing / सोर्सिंग
-  2. Drying / सुखाना
-  3. Grinding / पीसना
-  4. Sifting / छानना
-  5. Quality Control / गुणवत्ता नियंत्रण
-  6. Packaging / पैकेजिंग
+- Redesigned 6-step quality process with alternating image and text layout.
 - "From Plant to Paste" image gallery (4 columns)
 - CTA section
 
@@ -153,7 +145,7 @@ export default function Page() {
 **Features**:
 - Contact form with translated labels (Name, Email, Subject, Message)
 - "Send Message" / "संदेश भेजें" button
-- Contact information placeholder
+- Contact information placeholder (NEEDS UPDATE)
 - FAQ accordion (4 questions, all translated):
   - What is Henna? / हेना क्या है?
   - Origins and history of henna / मेहंदी की उत्पत्ति और इतिहास

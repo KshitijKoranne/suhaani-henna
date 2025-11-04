@@ -104,9 +104,9 @@ export default function OurStoryPage() {
         </div>
 
         {/* Quality Process Section */}
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-12">
-          <div className="flex flex-col gap-12 items-center">
-            <div className="text-center max-w-3xl">
+        <div className="w-full bg-white py-16 sm:py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
+            <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-[#1f1f1f] text-3xl md:text-4xl font-bold leading-tight tracking-tight">
                 {t.ourStory.qualityProcessTitle}
               </h2>
@@ -114,61 +114,68 @@ export default function OurStoryPage() {
                 {t.ourStory.qualityProcessDescription}
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                  <span className="material-symbols-outlined text-3xl">grass</span>
+
+            <div className="mt-20 flex flex-col gap-20">
+              {/* Step 1 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/story-henna-fields.jpg" alt="Lush, green henna fields in Rajasthan" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
-                <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.sourcingTitle}</h3>
-                <p className="text-[#6b6b6b] text-sm leading-relaxed">
-                  {t.ourStory.sourcingDescription}
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                  <span className="material-symbols-outlined text-3xl">wb_sunny</span>
+                <div className="flex flex-col gap-3">
+                  <span className="text-primary font-bold">Step 1</span>
+                  <h3 className="text-2xl font-bold text-[#1f1f1f]">{t.ourStory.sourcingTitle}</h3>
+                  <p className="text-[#6b6b6b] leading-relaxed">{t.ourStory.sourcingDescription}</p>
                 </div>
-                <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.dryingTitle}</h3>
-                <p className="text-[#6b6b6b] text-sm leading-relaxed">
-                  {t.ourStory.dryingDescription}
-                </p>
               </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                  <span className="material-symbols-outlined text-3xl">grain</span>
+
+              {/* Step 2 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="flex flex-col gap-3 md:order-2">
+                  <span className="text-primary font-bold">Step 2</span>
+                  <h3 className="text-2xl font-bold text-[#1f1f1f]">{t.ourStory.dryingTitle}</h3>
+                  <p className="text-[#6b6b6b] leading-relaxed">{t.ourStory.dryingDescription}</p>
                 </div>
-                <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.grindingTitle}</h3>
-                <p className="text-[#6b6b6b] text-sm leading-relaxed">
-                  {t.ourStory.grindingDescription}
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                  <span className="material-symbols-outlined text-3xl">filter_alt</span>
+                <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg md:order-1">
+                  <Image src="/images/natural-sun-drying.png" alt="Henna leaves drying naturally in the sun" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
-                <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.siftingTitle}</h3>
-                <p className="text-[#6b6b6b] text-sm leading-relaxed">
-                  {t.ourStory.siftingDescription}
-                </p>
               </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                  <span className="material-symbols-outlined text-3xl">science</span>
+
+              {/* Step 3 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/story-powder.jpg" alt="Fine, triple-sifted henna powder" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
-                <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.qualityControlTitle}</h3>
-                <p className="text-[#6b6b6b] text-sm leading-relaxed">
-                  {t.ourStory.qualityControlDescription}
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center gap-4 p-6 bg-white rounded-xl border border-[#d4c5b9] transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 cursor-pointer group">
-                <div className="flex items-center justify-center size-14 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
-                  <span className="material-symbols-outlined text-3xl">inventory_2</span>
+                <div className="flex flex-col gap-3">
+                  <span className="text-primary font-bold">Step 3</span>
+                  <h3 className="text-2xl font-bold text-[#1f1f1f]">{t.ourStory.grindingTitle}</h3>
+                  <p className="text-[#6b6b6b] leading-relaxed">{t.ourStory.grindingDescription}</p>
                 </div>
-                <h3 className="text-[#1f1f1f] text-xl font-bold">{t.ourStory.packagingTitle}</h3>
-                <p className="text-[#6b6b6b] text-sm leading-relaxed">
-                  {t.ourStory.packagingDescription}
-                </p>
               </div>
+
+              {/* Step 4 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="flex flex-col gap-3 md:order-2">
+                  <span className="text-primary font-bold">Step 4</span>
+                  <h3 className="text-2xl font-bold text-[#1f1f1f]">{t.ourStory.qualityControlTitle}</h3>
+                  <p className="text-[#6b6b6b] leading-relaxed">{t.ourStory.qualityControlDescription}</p>
+                </div>
+                <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg md:order-1">
+                  <Image src="/images/product-detail-closeup.jpg" alt="Close-up inspection of henna powder purity" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg">
+                  <Image src="/images/product-detail-mixing-paste.jpg" alt="Henna paste being mixed in a bowl with natural ingredients" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <span className="text-primary font-bold">Step 5</span>
+                  <h3 className="text-2xl font-bold text-[#1f1f1f]">{t.ourStory.packagingTitle}</h3>
+                  <p className="text-[#6b6b6b] leading-relaxed">{t.ourStory.packagingDescription}</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -232,12 +239,7 @@ export default function OurStoryPage() {
             <p className="text-[#6b6b6b] text-lg max-w-2xl">
               {t.ourStory.ctaDescription}
             </p>
-            <Link
-              href="/products"
-              className="inline-flex items-center justify-center rounded-full h-12 px-8 mt-4 bg-[#2a402b] text-white text-base font-bold hover:bg-[#2a402b]/90 transition-all duration-300 transform hover:scale-105 whitespace-nowrap"
-            >
-              {t.ourStory.shopProducts}
-            </Link>
+
           </div>
         </div>
       </main>

@@ -9,25 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-10 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="flex flex-col gap-4 md:col-span-2">
-            <h3 className="text-lg font-bold font-serif">{t.footer.stayConnected}</h3>
-            <p className="text-sm text-[#6b6b6b]">{t.footer.newsletterText}</p>
-            <form className="flex flex-col sm:flex-row gap-2">
-              <input
-                className="flex-grow rounded-lg border border-secondary/30 bg-[#f5f2e8] focus:ring-primary focus:border-primary px-4 py-2"
-                placeholder={t.footer.emailPlaceholder}
-                type="email"
-                aria-label="Email address"
-              />
-              <button
-                className="flex items-center justify-center rounded-lg h-11 px-5 bg-[#2a402b] text-white text-sm font-bold hover:bg-[#2a402b]/90 transition-all duration-300 hover:scale-105 hover:shadow-md"
-                type="submit"
-              >
-                {t.footer.subscribe}
-              </button>
-            </form>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col gap-4">
             <h3 className="text-base font-bold">{t.footer.shopTitle}</h3>
             <ul className="space-y-2 text-sm">

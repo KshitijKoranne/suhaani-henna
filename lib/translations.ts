@@ -4,7 +4,7 @@ export interface Translations {
   // Navigation
   nav: {
     home: string
-    shop: string
+    products: string
     ourStory: string
     gallery: string
     contact: string
@@ -111,7 +111,6 @@ export interface Translations {
     plantToPasteDescription: string
     ctaTitle: string
     ctaDescription: string
-    shopProducts: string
   }
   // Gallery Page
   gallery: {
@@ -149,10 +148,6 @@ export interface Translations {
   }
   // Footer
   footer: {
-    stayConnected: string
-    newsletterText: string
-    emailPlaceholder: string
-    subscribe: string
     shopTitle: string
     bodyArt: string
     hairCare: string
@@ -171,7 +166,7 @@ export const translations: Record<Language, Translations> = {
   en: {
     nav: {
       home: 'Home',
-      shop: 'Shop',
+      products: 'Products',
       ourStory: 'Our Story',
       gallery: 'Gallery',
       contact: 'Contact',
@@ -257,25 +252,24 @@ export const translations: Record<Language, Translations> = {
       globalDescription: 'Meeting international quality benchmarks to serve our worldwide clientele.',
       ecoTitle: 'Eco-Friendly',
       ecoDescription: 'Utilizing sustainable practices and eco-friendly packaging for a better tomorrow.',
-      qualityProcessTitle: 'How Suhaani Henna Provides You Best Quality',
-      qualityProcessDescription: 'Our meticulous six-step process ensures that every packet of Suhaani Henna delivers the richest color and purest quality, from farm to your fingertips.',
-      sourcingTitle: '1. Sourcing',
-      sourcingDescription: 'We handpick the finest, high-quality henna leaves from the most renowned cultivation regions, ensuring a superior starting point.',
-      dryingTitle: '2. Drying',
-      dryingDescription: 'The leaves are carefully dried in controlled environments, preserving their natural pigments and essential oils for maximum color potency.',
-      grindingTitle: '3. Grinding',
-      grindingDescription: 'Our advanced grinding process transforms the dried leaves into a super-fine powder without generating excess heat, keeping the lawsone content high.',
-      siftingTitle: '4. Sifting',
-      siftingDescription: 'The powder undergoes multiple sifting stages to achieve a silky-smooth, non-clumpy texture ideal for creating flawless henna paste.',
-      qualityControlTitle: '5. Quality Control',
-      qualityControlDescription: 'Each batch is lab-tested to guarantee it is 100% natural, free of chemicals, and meets our rigorous standards for color and purity.',
-      packagingTitle: '6. Packaging',
-      packagingDescription: 'We use premium, eco-friendly, airtight packaging to protect the henna from moisture and light, ensuring freshness from our facility to you.',
+      qualityProcessTitle: 'From Plant to Paste: Our Purity Process',
+      qualityProcessDescription: 'Our meticulous process ensures that every packet of Suhaani Henna delivers the richest color and purest quality. We combine ancient traditions with modern standards to bring you a product that is authentically natural and incredibly effective.',
+      sourcingTitle: 'The Source: Hand-picked Leaves',
+      sourcingDescription: "Our journey begins in the arid fields of Rajasthan, where the world's finest Lawsonia inermis plants grow. Our farmers, with generations of knowledge, select only the most vibrant leaves, ensuring the highest lawsone (natural dye) content. No pesticides or synthetic fertilizers are ever used.",
+      dryingTitle: 'The Preparation: Natural Sun-Drying',
+      dryingDescription: 'The harvested leaves are never treated with chemicals. They are laid out to dry naturally under the warm Indian sun. This slow, traditional method preserves the delicate essential oils and powerful pigment of the leaves, something that industrial ovens cannot replicate.',
+      grindingTitle: 'The Transformation: Stone-Ground & Triple-Sifted',
+      grindingDescription: "We use traditional stone grinders to gently mill the dried leaves. This avoids generating excess heat, which can degrade the henna's quality. The powder is then triple-sifted through fine muslin cloth, resulting in a silken, ethereal powder that is completely free of impurities. No additives, no fillers, just pure henna.",
+      siftingTitle: 'The Purity Test: Rigorous Quality Control',
+      siftingDescription: 'Every single batch undergoes rigorous testing in our in-house lab. We test for fineness, purity, and color potency. Most importantly, we certify that our henna is 100% free from PPD, ammonia, metallic salts, and any other synthetic contaminants commonly found in commercial henna.',
+      qualityControlTitle: 'The Art of the Blend: Small-Batch Mixing',
+      qualityControlDescription: 'For our ready-to-use products, the pure henna powder is mixed in small batches. We use only purified water, a touch of sugar to improve the stain, and a blend of pure essential oils like eucalyptus and lavender. We never use artificial preservatives.',
+      packagingTitle: 'The Delivery: Sealed for Freshness',
+      packagingDescription: 'Our finished henna powder and paste are immediately sealed in airtight, light-proof packaging. This protects the henna from oxidation and moisture, ensuring that the product that reaches you is as fresh and potent as the day it was crafted.',
       plantToPasteTitle: 'From Plant to Paste',
       plantToPasteDescription: 'Follow the journey of our henna, from lush green fields to the rich, vibrant paste that adorns your skin.',
       ctaTitle: 'Join Hands with Suhaani Henna',
       ctaDescription: 'Where tradition meets innovation, and nature meets excellence. Explore our collection and experience the purity for yourself.',
-      shopProducts: 'Shop Our Products',
     },
     gallery: {
       title: 'Suhaani Henna Inspiration Gallery',
@@ -310,10 +304,6 @@ export const translations: Record<Language, Translations> = {
       faq4Answer: 'We ship worldwide! Orders are typically processed within 1-2 business days. Due to the nature of our products, we do not accept returns on opened items, but if you have any issues with your order, please contact us and we will be happy to help.',
     },
     footer: {
-      stayConnected: 'Stay Connected',
-      newsletterText: 'Join our mailing list for updates, new products, and special offers.',
-      emailPlaceholder: 'Your email address',
-      subscribe: 'Subscribe',
       shopTitle: 'Shop',
       bodyArt: 'Body Art',
       hairCare: 'Hair Care',
@@ -331,7 +321,7 @@ export const translations: Record<Language, Translations> = {
     // Hindi translations - placeholder for now, will be filled from your document
     nav: {
       home: 'होम',
-      shop: 'शॉप',
+      products: 'उत्पाद',
       ourStory: 'हमारी कहानी',
       gallery: 'गैलरी',
       contact: 'संपर्क',
@@ -417,25 +407,24 @@ export const translations: Record<Language, Translations> = {
       globalDescription: 'हमारे विश्वव्यापी ग्राहकों की सेवा के लिए अंतरराष्ट्रीय गुणवत्ता मानकों को पूरा करना।',
       ecoTitle: 'पर्यावरण के अनुकूल',
       ecoDescription: 'बेहतर कल के लिए टिकाऊ प्रथाओं और पर्यावरण के अनुकूल पैकेजिंग का उपयोग।',
-      qualityProcessTitle: 'सुहानी हेना आपको सर्वोत्तम गुणवत्ता कैसे प्रदान करता है',
-      qualityProcessDescription: 'हमारी सावधानीपूर्वक छह-चरणीय प्रक्रिया यह सुनिश्चित करती है कि सुहानी हेना का हर पैकेट सबसे समृद्ध रंग और शुद्धतम गुणवत्ता प्रदान करता है।',
-      sourcingTitle: '1. सोर्सिंग',
-      sourcingDescription: 'हम सबसे प्रसिद्ध खेती क्षेत्रों से बेहतरीन, उच्च गुणवत्ता वाली मेहंदी की पत्तियों का चयन करते हैं।',
-      dryingTitle: '2. सुखाना',
-      dryingDescription: 'पत्तियों को नियंत्रित वातावरण में सावधानीपूर्वक सुखाया जाता है।',
-      grindingTitle: '3. पीसना',
-      grindingDescription: 'हमारी उन्नत पीसने की प्रक्रिया सूखे पत्तों को अति-महीन पाउडर में बदल देती है।',
-      siftingTitle: '4. छानना',
-      siftingDescription: 'पाउडर रेशमी-चिकनी, गैर-गुच्छेदार बनावट प्राप्त करने के लिए कई छानने के चरणों से गुजरता है।',
-      qualityControlTitle: '5. गुणवत्ता नियंत्रण',
-      qualityControlDescription: 'प्रत्येक बैच की प्रयोगशाला में जांच की जाती है ताकि यह सुनिश्चित हो सके कि यह 100% प्राकृतिक है।',
-      packagingTitle: '6. पैकेजिंग',
-      packagingDescription: 'हम मेहंदी को नमी और प्रकाश से बचाने के लिए प्रीमियम, पर्यावरण के अनुकूल, एयरटाइट पैकेजिंग का उपयोग करते हैं।',
+      qualityProcessTitle: 'पौधे से पेस्ट तक: हमारी शुद्धता की प्रक्रिया',
+      qualityProcessDescription: 'हमारी सावधानीपूर्वक प्रक्रिया यह सुनिश्चित करती है कि सुहानी मेंहदी का हर पैकेट सबसे गहरा रंग और शुद्धतम गुणवत्ता प्रदान करे। हम आपको एक ऐसा उत्पाद लाने के लिए प्राचीन परंपराओं को आधुनिक मानकों के साथ जोड़ते हैं जो प्रामाणिक रूप से प्राकृतिक और अविश्वसनीय रूप से प्रभावी है।',
+      sourcingTitle: 'स्रोत: हाथ से चुनी गई पत्तियां',
+      sourcingDescription: 'हमारी यात्रा राजस्थान के शुष्क क्षेत्रों में शुरू होती है, जहाँ दुनिया के सबसे अच्छे लॉसनिया इनर्मिस पौधे उगते हैं। हमारे किसान, पीढ़ियों के ज्ञान के साथ, केवल सबसे जीवंत पत्तियों का चयन करते हैं, जो उच्चतम लॉसन (प्राकृतिक डाई) सामग्री सुनिश्चित करते हैं। किसी भी कीटनाशक या सिंथेटिक उर्वरक का उपयोग कभी नहीं किया जाता है।',
+      dryingTitle: 'तैयारी: प्राकृतिक धूप में सुखाना',
+      dryingDescription: 'काटी गई पत्तियों का कभी भी रसायनों से उपचार नहीं किया जाता है। उन्हें गर्म भारतीय धूप के नीचे स्वाभाविक रूप से सूखने के लिए बिछाया जाता है। यह धीमी, पारंपरिक विधि पत्तियों के नाजुक आवश्यक तेलों और शक्तिशाली रंगद्रव्य को संरक्षित करती है, कुछ ऐसा जो औद्योगिक ओवन दोहरा नहीं सकते।',
+      grindingTitle: 'परिवर्तन: पत्थर से पिसा हुआ और तिहरा छाना हुआ',
+      grindingDescription: 'हम सूखे पत्तों को धीरे-धीरे पीसने के लिए पारंपरिक पत्थर की चक्की का उपयोग करते हैं। यह अतिरिक्त गर्मी पैदा करने से बचता है, जो मेंहदी की गुणवत्ता को खराब कर सकता है। पाउडर को फिर महीन मलमल के कपड़े के माध्यम से तिहरा छाना जाता है, जिसके परिणामस्वरूप एक रेशमी, अलौकिक पाउडर होता है जो अशुद्धियों से पूरी तरह मुक्त होता है। कोई योजक नहीं, कोई भराव नहीं, बस शुद्ध मेंहदी।',
+      siftingTitle: 'शुद्धता परीक्षण: कठोर गुणवत्ता नियंत्रण',
+      siftingDescription: 'हर एक बैच हमारी इन-हाउस लैब में कठोर परीक्षण से गुजरता है। हम सुंदरता, शुद्धता और रंग शक्ति का परीक्षण करते हैं। सबसे महत्वपूर्ण बात, हम यह प्रमाणित करते हैं कि हमारी मेंहदी पीपीडी, अमोनिया, धातु लवण और वाणिज्यिक मेंहदी में आमतौर पर पाए जाने वाले किसी भी अन्य सिंथेटिक संदूषक से 100% मुक्त है।',
+      qualityControlTitle: 'मिश्रण की कला: छोटे बैच में मिश्रण',
+      qualityControlDescription: 'हमारे उपयोग के लिए तैयार उत्पादों के लिए, शुद्ध मेंहदी पाउडर को छोटे बैचों में मिलाया जाता है। हम केवल शुद्ध पानी, दाग को बेहतर बनाने के लिए थोड़ी सी चीनी, और नीलगिरी और लैवेंडर जैसे शुद्ध आवश्यक तेलों का मिश्रण उपयोग करते हैं। हम कभी भी कृत्रिम परिरक्षकों का उपयोग नहीं करते हैं।',
+      packagingTitle: 'वितरण: ताजगी के लिए सील किया गया',
+      packagingDescription: 'हमारा तैयार मेंहदी पाउडर और पेस्ट तुरंत वायुरोधी, प्रकाश-प्रूफ पैकेजिंग में सील कर दिया जाता है। यह मेंहदी को ऑक्सीकरण और नमी से बचाता है, यह सुनिश्चित करता है कि आप तक पहुंचने वाला उत्पाद उतना ही ताजा और शक्तिशाली हो जितना कि जिस दिन इसे तैयार किया गया था।',
       plantToPasteTitle: 'पौधे से पेस्ट तक',
       plantToPasteDescription: 'हरे-भरे हरे खेतों से समृद्ध, जीवंत पेस्ट तक हमारी मेहंदी की यात्रा का अनुसरण करें।',
       ctaTitle: 'सुहानी हेना के साथ हाथ मिलाएं',
       ctaDescription: 'जहां परंपरा नवाचार से मिलती है, और प्रकृति उत्कृष्टता से मिलती है।',
-      shopProducts: 'हमारे उत्पाद खरीदें',
     },
     gallery: {
       title: 'सुहानी हेना प्रेरणा गैलरी',
@@ -470,10 +459,6 @@ export const translations: Record<Language, Translations> = {
       faq4Answer: 'हम विश्वव्यापी शिप करते हैं! ऑर्डर आमतौर पर 1-2 व्यावसायिक दिनों के भीतर संसाधित किए जाते हैं।',
     },
     footer: {
-      stayConnected: 'जुड़े रहें',
-      newsletterText: 'अपडेट, नए उत्पादों और विशेष ऑफ़र के लिए हमारी मेलिंग सूची में शामिल हों।',
-      emailPlaceholder: 'आपका ईमेल पता',
-      subscribe: 'सदस्यता लें',
       shopTitle: 'खरीदारी',
       bodyArt: 'बॉडी आर्ट',
       hairCare: 'हेयर केयर',

@@ -20,7 +20,7 @@ export default function HomePage() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.6) 100%), url("/images/hero-henna-leaves.jpg")`
+                backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.6) 100%), url("/images/hero-section.png")`
               }}
             />
             <div className="relative z-10 flex flex-col items-center gap-6 p-4 max-w-3xl">
@@ -131,7 +131,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 grid-rows-2 gap-4 h-[500px]">
                 <div
                   className="col-span-1 row-span-2 rounded-xl bg-cover bg-center overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer"
-                  style={{backgroundImage: "url('/images/story-henna-hands.jpg')"}}
+                  style={{backgroundImage: "url('/images/story-section-image.png')"}}
                 />
                 <div
                   className="col-span-1 row-span-1 rounded-xl bg-cover bg-center overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer"

@@ -25,6 +25,16 @@ export default function Header() {
         <div className="flex flex-1 justify-end items-center gap-8">
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
             <Link
+              href="/"
+              className={`transition-colors duration-300 hover:underline underline-offset-4 ${
+                pathname === '/'
+                  ? 'text-[#2a402b] underline underline-offset-4 font-semibold'
+                  : 'text-[#1f1f1f] hover:text-[#2a402b]'
+              }`}
+            >
+              {t.nav.home}
+            </Link>
+            <Link
               href="/products"
               className={`transition-colors duration-300 hover:underline underline-offset-4 ${
                 pathname?.startsWith('/products')
@@ -32,7 +42,7 @@ export default function Header() {
                   : 'text-[#1f1f1f] hover:text-[#2a402b]'
               }`}
             >
-              {t.nav.shop}
+              {t.nav.products}
             </Link>
             <Link
               href="/our-story"
@@ -66,15 +76,6 @@ export default function Header() {
             </Link>
           </nav>
           <div className="flex gap-4">
-            <button className="flex cursor-pointer items-center justify-center text-[#2a402b] hover:text-[#2a402b]/70 transition-all duration-300 hover:scale-110 active:scale-95" aria-label="Search">
-              <span className="material-symbols-outlined text-2xl">search</span>
-            </button>
-            <button className="flex cursor-pointer items-center justify-center text-[#2a402b] hover:text-[#2a402b]/70 transition-all duration-300 hover:scale-110 active:scale-95" aria-label="Account">
-              <span className="material-symbols-outlined text-2xl">person</span>
-            </button>
-            <button className="flex cursor-pointer items-center justify-center text-[#2a402b] hover:text-[#2a402b]/70 transition-all duration-300 hover:scale-110 active:scale-95" aria-label="Shopping Cart">
-              <span className="material-symbols-outlined text-2xl">shopping_bag</span>
-            </button>
             <LanguageToggle />
           </div>
         </div>

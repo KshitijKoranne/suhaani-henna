@@ -49,10 +49,9 @@ export default function ProductDetailPage() {
               Home
             </Link>
             <span className="text-[#6b6b6b] text-sm font-medium leading-normal">/</span>
-            <Link className="text-[#6b6b6b] text-sm font-medium leading-normal hover:text-primary" href="/products">
-              Shop
-            </Link>
-            <span className="text-[#6b6b6b] text-sm font-medium leading-normal">/</span>
+                          <Link className="text-[#6b6b6b] text-sm font-medium leading-normal hover:text-primary" href="/products">
+                            Products
+                          </Link>            <span className="text-[#6b6b6b] text-sm font-medium leading-normal">/</span>
             <span className="text-[#1f1f1f] text-sm font-medium leading-normal">100% Pure Natural Henna</span>
           </div>
         </div>
@@ -114,42 +113,7 @@ export default function ProductDetailPage() {
                 <span className="text-sm font-medium text-[#6b6b6b]">(125 reviews)</span>
               </div>
 
-              {/* Price */}
-              <p className="text-3xl font-bold text-primary">$12.99</p>
 
-              {/* Size Selector */}
-              <div className="flex flex-col gap-4">
-                <label className="text-sm font-bold text-[#1f1f1f]" htmlFor="size-selector">
-                  Size
-                </label>
-                <select
-                  className="w-full rounded-lg border-[#d4c5b9] bg-white text-[#1f1f1f] focus:border-primary focus:ring-primary px-4 py-2"
-                  id="size-selector"
-                >
-                  <option>100g (3.5 oz) - Powder</option>
-                  <option>250g (8.8 oz) - Powder</option>
-                  <option>250g (8.8 oz) - Paste</option>
-                  <option>Pack of 6 - Cones</option>
-                </select>
-              </div>
-
-              {/* Quantity and Add to Cart */}
-              <div className="flex items-center gap-4">
-                <div className="flex items-center rounded-lg border border-[#d4c5b9] p-2 bg-white">
-                  <button className="px-2 text-[#6b6b6b] hover:text-primary">-</button>
-                  <input
-                    className="w-12 text-center bg-transparent border-0 focus:ring-0 text-[#1f1f1f]"
-                    readOnly
-                    type="text"
-                    defaultValue="1"
-                  />
-                  <button className="px-2 text-[#6b6b6b] hover:text-primary">+</button>
-                </div>
-                <button className="flex-1 flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-[#2a402b] text-white gap-2 text-base font-bold leading-normal hover:bg-[#2a402b]/90 transition-all duration-300 transform hover:scale-105 whitespace-nowrap">
-                  <span className="material-symbols-outlined">add_shopping_cart</span>
-                  Add to Cart
-                </button>
-              </div>
 
               {/* Features */}
               <div className="flex justify-center items-center gap-6 pt-6 border-t border-[#d4c5b9] mt-4">
