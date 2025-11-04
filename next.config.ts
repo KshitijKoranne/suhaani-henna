@@ -9,10 +9,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-    dirs: ['app', 'components', 'contexts', 'lib'],
-  },
 }
 
 export default nextConfig
